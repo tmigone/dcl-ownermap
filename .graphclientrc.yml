@@ -1,0 +1,9 @@
+sources:
+  - name: dcl-marketplace
+    handler:
+      graphql:
+        # endpoint: https://api.thegraph.com/subgraphs/name/decentraland/marketplace
+        endpoint: https://gateway.thegraph.com/api/f11bf4f437492b53b23d31bc5e146a22/subgraphs/id/GnwyhKp8uQkktC3vgMxWpg9f9qea75WQ6GXTxjW6BbZq
+          
+documents:
+  - dcl.graphql

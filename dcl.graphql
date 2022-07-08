@@ -1,0 +1,10 @@
+query ParcelOwners($first: Int, $skip: Int) {
+  parcels(first: $first, orderBy: id, skip: $skip) {
+    id,
+    x,
+    y,
+    owner {
+      id
+    }
+  }
+}
