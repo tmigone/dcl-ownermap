@@ -10,3 +10,5 @@ artifacts
 
 # Typechain
 typechain-types
+
+.graphclient

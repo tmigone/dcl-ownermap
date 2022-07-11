@@ -1,15 +1,15 @@
-# Basic Sample Hardhat Project
+# Decentraland LAND owner tracker
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+Scripts to track LAND owners.
 
-Try running some of the following tasks:
+## scripts/subgraph
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+First you'll need to create an `.env` file with your Graph Studio API key, see [`.env.example`](.env.example). The API key must have a GRT balance (less than 1 GRT is used per run). Then run:
+
+```bash
+yarn install
+yarn graphclient build
+yarn ts-node scripts/subgraph.ts
 ```
+
+You'll find the results in the `data` folder.
