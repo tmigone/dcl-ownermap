@@ -62,6 +62,10 @@ async function main() {
   const whales = byOwner.sort((a, b) => b.parcels.length - a.parcels.length).slice(0, 10);
   console.log(`Whales: `);
   whales.map(w => console.log(`- ${w.id} has ${w.parcels.length} parcels`));
+  fs.writeFileSync(
+    `data/whales-${new Date().toJSON().slice(0, 10)}.json`,
+    JSON.stringify(whales, null, 2)
+  );
 }
 
 main();

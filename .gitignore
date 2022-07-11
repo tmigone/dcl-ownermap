@@ -12,3 +12,9 @@ artifacts
 typechain-types
 
 .graphclient
+
+data
+!data/grid-2022-07-11.json
+!data/owner-2022-07-11.json
+!data/raw-2022-07-11.json
+!data/whales-2022-07-11.json
